@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 05 oct. 2021 à 11:17
+-- Généré le : mar. 12 oct. 2021 à 19:37
 -- Version du serveur : 10.4.20-MariaDB
 -- Version de PHP : 7.3.29
 
@@ -34,9 +34,9 @@ CREATE TABLE `apprenant` (
   `date_modification` date DEFAULT NULL,
   `email_apprenant` varchar(255) DEFAULT NULL,
   `genre_apprenant` varchar(255) DEFAULT NULL,
-  `login_apprenant` varchar(255) DEFAULT NULL,
+  `login` varchar(255) DEFAULT NULL,
   `nom_apprenant` varchar(255) DEFAULT NULL,
-  `password_apprenant` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
   `prenom_apprenant` varchar(255) DEFAULT NULL,
   `status_apprenant` int(11) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -45,11 +45,11 @@ CREATE TABLE `apprenant` (
 -- Déchargement des données de la table `apprenant`
 --
 
-INSERT INTO `apprenant` (`id_apprenant`, `age_apprenant`, `date_creation`, `date_modification`, `email_apprenant`, `genre_apprenant`, `login_apprenant`, `nom_apprenant`, `password_apprenant`, `prenom_apprenant`, `status_apprenant`) VALUES
-(1, 32, '2020-09-04', '2021-11-10', 'dra213@gmail.com', 'Masculin', 'mallaDesign', 'DIARRA', 'YHJKLL', 'Dramane', 0),
-(4, 3, '2020-09-04', '2021-11-10', 'dra213@gmail.com', 'Masculin', 'mallaDesign', 'KONATE', 'YHJKLL', 'ggg', 0),
-(5, 27, '2020-09-04', '2021-11-10', 'dra213@gmail.com', 'Masculin', 'dra1', 'DIARRA', 'YHJKLL', 'Dramane', 0),
-(6, 25, '2020-09-04', '2021-11-10', 'malla213@gmail.com', 'Masculin', 'malladesign', 'KONE', 'bcjdjij', 'Mohamed Lamine', 1);
+INSERT INTO `apprenant` (`id_apprenant`, `age_apprenant`, `date_creation`, `date_modification`, `email_apprenant`, `genre_apprenant`, `login`, `nom_apprenant`, `password`, `prenom_apprenant`, `status_apprenant`) VALUES
+(1, 25, '2020-09-04', '2021-11-10', 'malla213@gmail.com', 'Masculin', 'test', 'KONE', 'test', 'Mohamed Lamine', 1),
+(2, 25, '2020-09-04', '2021-11-10', 'malla213@gmail.com', 'Masculin', 'test1', 'KONE', 'test2', 'Mohamed Lamine', 1),
+(3, 25, '2020-09-04', '2021-11-10', 'malla213@gmail.com', 'Masculin', 'test3', 'KONE', 'test3', 'Mohamed Lamine', 1),
+(4, 25, '2020-09-04', '2021-11-10', 'malla213@gmail.com', 'Masculin', 'test4', 'KONE', 'test4', 'Mohamed Lamine', 1);
 
 --
 -- Index pour les tables déchargées
@@ -69,7 +69,7 @@ ALTER TABLE `apprenant`
 -- AUTO_INCREMENT pour la table `apprenant`
 --
 ALTER TABLE `apprenant`
-  MODIFY `id_apprenant` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_apprenant` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
